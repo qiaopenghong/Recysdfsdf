@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hhzmy.recy.AnimatorActivity">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/transcale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="WeiYi"
+            android:text="位移"/>
+        <Button
+            android:id="@+id/toger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Toger"
+            android:text="多个动画执行"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_below="@id/ll"
+        android:layout_width="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/umeng_xp_cm_new_tip_bg"/>
+</RelativeLayout>
